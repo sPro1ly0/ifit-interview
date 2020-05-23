@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/heading-has-content */
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
 function GridLibrary() {
