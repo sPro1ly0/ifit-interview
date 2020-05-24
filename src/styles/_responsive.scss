@@ -1,0 +1,29 @@
+@include media-screen-medium {
+    .top-product-nav {
+        justify-content: flex-start;
+
+        a {
+            width: 120px;
+
+            &:nth-child(3) {
+                border-right: 2px solid $border-color;
+              }
+        }
+
+    }
+
+    .menu-burger {
+        display: none;
+    }
+
+    .main-links {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 387px;
+        height: 71px;
+        top: 0;
+    }
+
+}
