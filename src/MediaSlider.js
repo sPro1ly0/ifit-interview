@@ -7,50 +7,37 @@ class MediaSlider extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentIndex: 0,
-            lastIndex: 3
+            data: testimonials
         }
     }
 
     prevButton = () => {
-        let index = this.state.currentIndex;
-
-        if (index < 1) {
-            index = testimonials.length;
-        } else {
-            --index;
-        }
-
+        let currentTests = this.state.data;
+        let prevTest = currentTests.pop();
         this.setState({
-            currentIndex: index
+            data: [prevTest, ...currentTests]
         });
     }
 
     nextButton = () => {
-        let index = this.state.currentIndex;
-
-        if (index === testimonials.length) {
-            index = -1;
-        } else {
-            ++index;
-        }
-
+        let currentTests = this.state.data;
+        let nextTest = currentTests.shift();
         this.setState({
-            currentIndex: index
+            data: [...currentTests, nextTest]
         });
     }
 
     render() {
-        const { currentIndex } = this.state;
-
-        const cards = testimonials.map( (t, i) => 
-            <div key={t.id} className='media-testimonial'>
+        const { data } = this.state;
+        
+        const cards = data.map((d, i) => 
+            <div key={d.id} className='media-testimonial'>
                 <img 
-                    src={require(`./images/${t.logo}`)} 
+                    src={require(`./images/${d.logo}`)} 
                     className='media-logo' 
-                    alt={t.altText}
+                    alt={d.altText}
                 />
-                <p className='media-text'>{t.testmonial}</p>
+                <p className='media-text'>{d.testmonial}</p>
             </div>
         );
 
