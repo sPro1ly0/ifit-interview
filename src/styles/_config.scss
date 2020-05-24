@@ -9,3 +9,9 @@
       @content;
     }
 }
+
+@mixin media-screen-xlarge {
+    @media screen and (min-width: 1440px) {
+      @content;
+    }
+}
