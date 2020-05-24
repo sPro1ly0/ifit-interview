@@ -5,33 +5,75 @@ function Footer() {
     return (
         <footer>
             <div className='website-links'>
-            <div className='company-links'>
-                <h2>Company</h2>
-                <a>About</a>
-                <a>Contact Us</a>
-                <a>Careers</a>
-            </div>
-            <div className='account-links'>
-                <h2>Account</h2>
-                <a>Log In</a>
-                <a>Create Account</a>
-            </div>
-            <div className='support-links'>
-                <h2>Support</h2>
-                <a>Help Center</a>
-                <a>Accessibility</a>
-            </div>
+                <div className='company-section'>
+                    <h2>Company</h2>
+                    <div className='company-links'>
+                        <a>About</a>
+                        <a>Contact Us</a>
+                        <a>Careers</a>
+                    </div>
+                </div>
+                <div className='account-section'>
+                    <h2>Account</h2>
+                    <div className='account-links'>
+                        <a>Log In</a>
+                        <a>Create Account</a> 
+                    </div>
+                    
+                </div>
+                <div className='support-section'>
+                    <h2>Support</h2>
+                    <div className='support-links'>
+                        <a>Help Center</a>
+                        <a>Accessibility</a>
+                    </div>
+                </div>
             </div>
             <div className='social-links'>
-            
+                <a href='#'>
+                    <div className='dark-background'>
+                        <img src={require('./images/Social-youtube.png')} alt='YouTube link to iFit coach.' />
+                    </div>
+                    
+                </a>
+                <a href='#'>
+                    <div className='dark-background'>
+                        <img src={require('./images/Social--pinterest.png')} alt='Pinterest link to iFit coach.' /> 
+                    </div>
+                </a>
+                <a href='#'>
+                    <div className='dark-background'>
+                        <img src={require('./images/Social--facebook.png')} alt='Facebook link to iFit coach.' />
+                    </div>
+                </a>
+                <a href='#'>
+                    <div className='dark-background'>
+                        <img src={require('./images/Social--twitter.png')} alt='Twitter link to iFit coach.' />
+                    </div> 
+                </a>
+                <a href='#'>
+                    <div className='dark-background'>
+                        <img src={require('./images/Social--instagram.png')} alt='Instagram link to iFit coach.' />
+                    </div>
+                </a>
             </div>
             <div className='language-legal-info'>
-            <select className='language-selector'>English</select>
-            <div className='legal-info'>
-                <p>© iFit.com. All Rights Reserved.</p>
-                <a>Privacy Policy</a>
-                <a>Terms of Use</a>
-            </div>
+                <div className='language-selector'>
+                    <select>
+                        <option>English</option>
+                        <option>Spanish</option>
+                    </select>
+                </div>
+                
+                
+
+                <div className='legal-info'>
+                    <p>© iFit.com. All Rights Reserved.</p>
+                    <div className='legal-links'>
+                        <a href='#'>Privacy Policy</a>
+                        <a href='#'>Terms of Use</a> 
+                    </div> 
+                </div>
             </div>
         </footer>
     );
