@@ -48,7 +48,9 @@ class MediaSlider extends Component {
                     className='left-arrow-button'> 
                     &lt; 
                 </button>
-                {cards}
+                <div className='media-content'>
+                    {cards}
+                </div>
                 <button
                     onClick={this.nextButton} 
                     className='right-arrow-button'>
