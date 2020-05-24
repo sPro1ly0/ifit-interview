@@ -26,4 +26,32 @@
         top: 0;
     }
 
+    .hero-text {
+        width: 500px;
+        height: 120px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+}
+
+@include media-screen-large {
+    .main-nav {
+        justify-content: space-between;
+    }
+    
+    .ifitcoach-logo {
+        padding-left: 40px;
+    }
+
+    .sign-up-button {
+        margin-right: 23px;
+    }
+
+    .hero-text {
+        width: 984px;
+        height: 180px;
+        font-size: 72px;
+        line-height: 90px;
+    }
 }
