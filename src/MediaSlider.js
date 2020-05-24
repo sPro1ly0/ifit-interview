@@ -29,8 +29,10 @@ class MediaSlider extends Component {
 
     render() {
         const { data } = this.state;
+
+        let currentCards = data.slice(0, 5);
         
-        const cards = data.map((d, i) => 
+        const cards = currentCards.map((d, i) => 
             <div key={d.id} className='media-testimonial'>
                 <img 
                     src={require(`./images/${d.logo}`)} 
