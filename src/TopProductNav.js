@@ -4,9 +4,9 @@ import React from 'react';
 function TopProductNav() {
     return (
         <nav className='top-product-nav'>
-          <a>BLOG</a>
-          <a>NOURISH</a>
-          <a>SHOP</a>
+          <a key={1}>BLOG</a>
+          <a key={2}>NOURISH</a>
+          <a key={3}>SHOP</a>
         </nav>
     );
 }

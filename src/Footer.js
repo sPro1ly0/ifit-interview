@@ -11,53 +11,53 @@ function Footer() {
     return (
         <footer>
             <div className='website-links'>
-                <div className='company-section'>
+                <div key={1} className='company-section'>
                     <h2>Company</h2>
                     <div className='company-links'>
-                        <a>About</a>
-                        <a>Contact Us</a>
-                        <a>Careers</a>
+                        <a key={1}>About</a>
+                        <a key={2}>Contact Us</a>
+                        <a key={3}>Careers</a>
                     </div>
                 </div>
-                <div className='account-section'>
+                <div key={2} className='account-section'>
                     <h2>Account</h2>
                     <div className='account-links'>
-                        <a>Log In</a>
-                        <a>Create Account</a> 
+                        <a key={1}>Log In</a>
+                        <a key={2}>Create Account</a> 
                     </div>
                     
                 </div>
-                <div className='support-section'>
+                <div key={3} className='support-section'>
                     <h2>Support</h2>
                     <div className='support-links'>
-                        <a>Help Center</a>
-                        <a>Accessibility</a>
+                        <a key={1}>Help Center</a>
+                        <a key={2}>Accessibility</a>
                     </div>
                 </div>
             </div>
             <div className='social-links'>
-                <a href='#'>
+                <a key={1} href='#'>
                     <div className='dark-background'>
                         <img src={require('./images/Social-youtube.png')} alt='YouTube link to iFit coach.' />
                     </div>
                     
                 </a>
-                <a href='#'>
+                <a key={2} href='#'>
                     <div className='dark-background'>
                         <img src={require('./images/Social--pinterest.png')} alt='Pinterest link to iFit coach.' /> 
                     </div>
                 </a>
-                <a href='#'>
+                <a key={3} href='#'>
                     <div className='dark-background'>
                         <img src={require('./images/Social--facebook.png')} alt='Facebook link to iFit coach.' />
                     </div>
                 </a>
-                <a href='#'>
+                <a key={4} href='#'>
                     <div className='dark-background'>
                         <img src={require('./images/Social--twitter.png')} alt='Twitter link to iFit coach.' />
                     </div> 
                 </a>
-                <a href='#'>
+                <a key={5} href='#'>
                     <div className='dark-background'>
                         <img src={require('./images/Social--instagram.png')} alt='Instagram link to iFit coach.' />
                     </div>
@@ -72,8 +72,8 @@ function Footer() {
                 <div className='legal-info'>
                     <p>© iFit.com. All Rights Reserved.</p>
                     <div className='legal-links'>
-                        <a href='#'>Privacy Policy</a>
-                        <a href='#'>Terms of Use</a> 
+                        <a key={1} href='#'>Privacy Policy</a>
+                        <a key={2} href='#'>Terms of Use</a> 
                     </div> 
                 </div>
             </div>

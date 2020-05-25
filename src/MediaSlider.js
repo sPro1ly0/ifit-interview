@@ -32,7 +32,7 @@ class MediaSlider extends Component {
 
         let currentCards = data.slice(0, 5); // display 5 at a time
         
-        const cards = currentCards.map((d, i) => 
+        const cards = currentCards.map(d => 
             <div key={d.id} className='media-testimonial'>
                 <img 
                     src={require(`./images/${d.logo}`)} 

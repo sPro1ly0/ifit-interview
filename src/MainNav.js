@@ -16,10 +16,10 @@ function MainNav() {
                 </div> 
             </div>
             <div className='main-links'>
-                <a href='#'>EXERCISE</a>
-                <a href='#'>NUTRITION</a>
-                <a href='#'>ACTIVITY</a>
-                <a href='#'>SLEEP</a>
+                <a key={1} href='#'>EXERCISE</a>
+                <a key={2} href='#'>NUTRITION</a>
+                <a key={3} href='#'>ACTIVITY</a>
+                <a key={4} href='#'>SLEEP</a>
             </div>
             <button className='sign-up-button'>SIGN UP</button>
         </nav>
