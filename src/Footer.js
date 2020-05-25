@@ -69,9 +69,6 @@ function Footer() {
                         {languageOptions}
                     </select>
                 </div>
-                
-                
-
                 <div className='legal-info'>
                     <p>© iFit.com. All Rights Reserved.</p>
                     <div className='legal-links'>

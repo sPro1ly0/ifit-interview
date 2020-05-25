@@ -16,7 +16,13 @@ function GridLibrary() {
                 />
                 {
                     l.workouts 
-                        ? <div className='workouts'><div className='workouts-content'><p className='workouts-number'>{l.workouts}</p><p className='small-text'>WORKOUTS</p><img src={require('./images/icn_playlist-copy-3.svg')}/></div></div> 
+                        ? <div className='workouts'>
+                            <div className='workouts-content'>
+                                <p className='workouts-number'>{l.workouts}</p>
+                                <p className='small-text'>WORKOUTS</p>
+                                <img src={require('./images/icn_playlist-copy-3.svg')}/>
+                            </div>
+                        </div> 
                         : ''
                 }
             </div>
@@ -27,11 +33,17 @@ function GridLibrary() {
                         <h2 className='card-stats'>
                             {   
                                 l.metricTime 
-                                    ? <span><img className='timer-icon' src={require(`./images/icn_timer_line@3x.png`)}/><p>{l.metricTime}</p></span> 
+                                    ? <span>
+                                        <img className='timer-icon' src={require(`./images/icn_timer_line@3x.png`)}/>
+                                        <p>{l.metricTime}</p>
+                                      </span> 
                                     : ''
                             }
                             {   l.metricDistance 
-                                    ? <span><img className='distance-icon' src={require(`./images/icn_distance_line.png`)}/><p>{l.metricDistance }</p></span>
+                                    ? <span>
+                                        <img className='distance-icon' src={require(`./images/icn_distance_line.png`)}/>
+                                        <p>{l.metricDistance }</p>
+                                      </span>
                                     : ''
                             }
                         </h2>
@@ -42,11 +54,11 @@ function GridLibrary() {
                         alt={l.avatarAltText}
                     />
                 </div>
-                
                 <a href='#' className='card-link'>VIEW DETAILS</a>
             </div>
         </div>
     );
+    
     return (
         <div className='grid-library-cards'>
             {libraryCards}

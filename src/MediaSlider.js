@@ -10,7 +10,7 @@ class MediaSlider extends Component {
             data: testimonials
         }
     }
-
+    // change order of the testimonials in array
     prevButton = () => {
         let currentTests = this.state.data;
         let prevTest = currentTests.pop();
@@ -30,7 +30,7 @@ class MediaSlider extends Component {
     render() {
         const { data } = this.state;
 
-        let currentCards = data.slice(0, 5);
+        let currentCards = data.slice(0, 5); // display 5 at a time
         
         const cards = currentCards.map((d, i) => 
             <div key={d.id} className='media-testimonial'>
@@ -61,7 +61,6 @@ class MediaSlider extends Component {
             </div>
         );
     }
-
 }
 
 export default MediaSlider;
