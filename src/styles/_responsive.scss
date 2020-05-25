@@ -56,6 +56,24 @@
         }
     }
 
+    .equipment-selection-title {
+        width: 768px;
+        height: 28px;
+    }
+
+    .equipment {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        width: 650px;
+        margin: 0 auto 50px;
+
+        &-card {
+            margin: 10px;
+        }
+    }
+
 }
 
 @include media-screen-large {
@@ -104,6 +122,8 @@
 
     }
 
+  
+
 }
 
 @include media-screen-xlarge {
@@ -141,6 +161,18 @@
         &:last-child {
             margin-bottom: 12px;
         }
+    }
 
+    .equipment {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-flow: nowrap;
+
+        &-card {
+            width: 330px;
+            height: 330px;
+        }
     }
 }
