@@ -74,6 +74,50 @@
         }
     }
 
+    .website-links {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company-section,
+    .account-section,
+    .support-section {
+        width: auto;
+        margin: 0 80px;
+    }
+
+    .social-links {
+        justify-content: center;
+
+        a {
+            margin: 0 15px;
+        }
+    }
+
+    .language-selector {
+        position: absolute;
+        left: 40px;
+    }
+
+    .legal-info {
+        justify-content: space-between;
+        width: 438px;
+
+        p, a {
+           font-size: 14px; 
+        }
+
+        p {
+            width: 215px;
+        }
+    }
+
+    .legal-links {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 225px;
+    }
+
 }
 
 @include media-screen-large {

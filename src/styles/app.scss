@@ -5,6 +5,7 @@
 @import './mediaslider';
 @import './gridlibrary';
 @import './equipment';
+@import './footer';
 @import './responsive';
 
 body {
@@ -13,171 +14,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
+
   a {
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #0069d2;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    cursor: pointer;
   }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-/**Footer**/
-footer {
-  color: #fff;
-  background: #2e3134;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
-}
-
-.website-links {
-  display: flex;
-  height: 207px;
-
-  h2 {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.5px;
-  }
-
-  a {
-    opacity: 0.795553;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.3px;
-    margin-bottom: 10px;
-  }
-}
-
-.company-section,
-.account-section,
-.support-section {
-  width: 30%;
-  height: 112px;
-  margin: auto;
-}
-
-.company-section {
-  margin-left: 20px;
-}
-
-.company-links,
-.account-links,
-.support-links {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.social-links {
-  width: 100%;
-  height: 76px;
-  border-top: 2px solid #585a5d;
-  border-bottom: 2px solid #585a5d;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  a {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #0069D2, #28E1A5);
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .dark-background {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background: #2e3134;
-      border-radius: 50%;
-      width: 35px;
-      height: 35px;
-      img {
-        width: 24px;
-        height: 24px;
-        background: #2e3134;
-      }
-    }
-    
-  }
-
-}
-
-.language-legal-info {
-  height: 66px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.legal-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  p {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.3px;
-    margin-right: 7px;
-  }
-
-  a {
-    text-decoration: none;
-    opacity: 0.803052;
-    color: #fff;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.3px;
-  }
-}
-
-.legal-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.language-selector {
-  position: relative;
-  width: 60px;
-  height: 17px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  select {
-    color: #fff;
-    background: #2e3134;
-    height: 17px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.5px;
-    border: none;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance: none;
-  }
- 
-  option {
-    color: #fff;
-  }
-}
-
-.language-selector::after {
-  content:"\2304";
-  height: 17px;
-  font-size: 17px;
-  font-weight: 400;
-  position: absolute;
-  top: -7px;
-  right: -5px;
 }
