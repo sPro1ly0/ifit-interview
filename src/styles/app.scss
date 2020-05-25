@@ -13,20 +13,24 @@ body {
   font-family: proxima-nova, 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  background-color: $fourth-color;
 
   a {
     text-decoration: none;
-
     &:hover,
     &:focus {
-      color: #0069d2;
+      color: $secondary-color;
       cursor: pointer;
     }
   }
 
   button {
     cursor: pointer;
+    transition: 0.4s;
+    &:hover,
+    &:focus {
+      background-color: $blue-hover-color;
+    }
   }
 }
 

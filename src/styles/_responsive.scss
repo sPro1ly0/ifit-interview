@@ -97,6 +97,10 @@
     .language-selector {
         position: absolute;
         left: 40px;
+
+        &::after {
+            right: -10px;
+        }
     }
 
     .legal-info {

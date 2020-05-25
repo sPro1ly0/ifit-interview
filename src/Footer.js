@@ -1,7 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import languages from './languages';
 
 function Footer() {
+
+    const languageOptions = languages.map((l, i) => 
+        <option key={i}>{l}</option>
+    );
+    
     return (
         <footer>
             <div className='website-links'>
@@ -60,8 +66,7 @@ function Footer() {
             <div className='language-legal-info'>
                 <div className='language-selector'>
                     <select>
-                        <option>English</option>
-                        <option>Spanish</option>
+                        {languageOptions}
                     </select>
                 </div>
                 

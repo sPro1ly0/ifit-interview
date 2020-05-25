@@ -5,27 +5,36 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  }
+}
   
-  .grid-card {
+.grid-card {
     width: 288px;
     height: 288px;
     border-radius: 4px;
     box-shadow: 0px 7px 12px rgba(46,49,52,0.3);
     margin-top: 25px;
+    cursor: pointer;
+
+    &:hover .workouts {
+      display: flex;
+    }
+
+    &:hover .card-link {
+      visibility: visible;
+    }
   
     &:last-child {
       margin-bottom: 25px;
     }
-  }
+}
   
-  .card-image-and-workouts {
+.card-image-and-workouts {
     position: relative;
     width: 288px;
     height: 164px;
-  }
+}
   
-  .workouts {
+.workouts {
     background: rgba(0,12,40,0.54);
     color: #fff;
     border-top-right-radius: 4px;
@@ -34,6 +43,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    display: none;
     width: 112px;
     height: 164px;
     top: 0;
@@ -48,51 +58,56 @@
         align-items: center;
   
         .small-text {
-          font-size: 10px;
-          font-weight: 400;
-          line-height: 12px;
-          letter-spacing: 0.3px;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 12px;
+            letter-spacing: 0.3px;
         }
   
         .workouts-number {
-          font-family: league-gothic, sans-serif;
-          font-size: 28px;
-          font-weight: 400;
-          line-height: 30px;
-          text-align: center;
-          letter-spacing: 0.5px;
-          margin: 0;
+            font-family: league-gothic, sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            margin: 0;
         }
-      }
-  
+    }
       
-  }
+}
   
-  .grid-image {
+.grid-image {
     width: 288px;
     height: 164px;
-  }
+}
   
-  .avatar-icon {
+.avatar-icon {
     width: 28px;
     height: 28px;
-  }
+}
   
-  .card-info {
+.card-info {
     width: 256px;
     height: 92px;
     padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
+
+    &:hover {
+        background: $card-hover-color;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
   
-  .card-title-and-stats {
+.card-title-and-stats {
     height: 80px;
     width: 220px;
-  }
+}
   
-  .card-title {
+.card-title {
     width: 220px;
     max-height: 36px;
     color: #2e3134;
@@ -102,9 +117,9 @@
     letter-spacing: 0.3px;
     padding: 0;
     margin-top: 0;
-  }
+}
   
-  .card-stats {
+.card-stats {
     color: #2e3134;
     width: 171px;
     min-height: 12px;
@@ -121,14 +136,14 @@
       align-content: center;
       margin-left: 0;
   
-      &:first-child {
-        width: 50px;
-      }
-  
-      p {
-        margin: 1px 0 0 0;
-        letter-spacing: 0.3px;
-      }
+        &:first-child {
+          width: 50px;
+        }
+    
+        p {
+          margin: 1px 0 0 0;
+          letter-spacing: 0.3px;
+        }
     }
   
 }
@@ -142,6 +157,7 @@
 }
   
 .card-link {
+    visibility: hidden;
     text-decoration: none;
     width: 110px;
     height: 16px;
@@ -150,6 +166,10 @@
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.5px;
+    transition: 0.2s;
+    &:hover {
+      font-size: 15px;
+    }
 }
   
 .timer-icon,
@@ -157,4 +177,5 @@
     width: 12px;
     height: 12px;
     margin-right: 5px;
+    border-radius: 20px;
 }

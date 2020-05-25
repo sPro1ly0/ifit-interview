@@ -23,6 +23,12 @@ footer {
         line-height: 16px;
         letter-spacing: 0.3px;
         margin-bottom: 10px;
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+            color: $fourth-color;
+        }
     }
 }
   
@@ -64,6 +70,12 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        &:hover,
+        &:focus {
+            transition: 0.4s;
+            background: linear-gradient(135deg, #28E1A5, #0069D2);;
+        }
   
         .dark-background {
             display: flex;
@@ -73,6 +85,7 @@ footer {
             border-radius: 50%;
             width: 35px;
             height: 35px;
+
             img {
                 width: 24px;
                 height: 24px;
@@ -111,12 +124,18 @@ footer {
         font-weight: 400;
         line-height: 16px;
         letter-spacing: 0.3px;
+        
+        &:hover,
+        &:focus {
+            opacity: 1;
+            color: $fourth-color;
+        }
     }
 }
   
 .legal-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
   
 .language-selector {
@@ -139,6 +158,10 @@ footer {
         -webkit-appearance:none;
         -moz-appearance:none;
         appearance: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
    
     option {
