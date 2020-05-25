@@ -7,8 +7,6 @@ const languages = [
     'Polish',
     'Bengali',
     'Russian',
-    'Japanese',
-    'Javanese',
     'German',
     'Thai',
     'Korean',
