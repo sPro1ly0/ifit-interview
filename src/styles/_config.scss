@@ -1,4 +1,4 @@
-@mixin flex($direction, $justify) {
+@mixin flexContent($direction, $justify) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
